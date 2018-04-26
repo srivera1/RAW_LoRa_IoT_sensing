@@ -2,7 +2,7 @@
   IoT raw Lora sender: Take and send readings from sensors
   By: Sergio Rivera Lavado
   Date: April 2018
-  https://github.com/
+  https://github.com/srivera1/RAW_LoRa_IoT_sensing
 
   Hardware (always at 3.3V)
   -STM32 board (Blue pill)
