@@ -84,8 +84,32 @@ void setup() {
   }
   /**/
   // TODO: implement more modes
-  int Mode = 5;
-  if (Mode == 0) { // 43 bps
+  int Mode = -2;
+  if (Mode == -1) { // XX bps
+    LoRa.setSignalBandwidth(62.5E3);
+    LoRa.setSpreadingFactor(7);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(8);
+    LoRa.setPreambleLength(17);
+  }
+  else if (Mode == -2) { // 43 bps
+    LoRa.setSignalBandwidth(41.7E3);
+    LoRa.setSpreadingFactor(8);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(8);
+    LoRa.setPreambleLength(17);
+  }
+  else if (Mode == -3) { // 43 bps
+    LoRa.setSignalBandwidth(20.8E3);
+    LoRa.setSpreadingFactor(9);           // 7,8,9  ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(8);
+    LoRa.setPreambleLength(17);
+  }
+  else if (Mode == -4) { // 43 bps
+    LoRa.setSignalBandwidth(15.6E3);
+    LoRa.setSpreadingFactor(9);           // 7,8,9  ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(5);
+    LoRa.setPreambleLength(17);
+  }
+  else if (Mode == 0) { // 43 bps
     LoRa.setSignalBandwidth(20.8E3);
     LoRa.setSpreadingFactor(11);           // ranges from 6-12,default 7 see API docs
     LoRa.setCodingRate4(8);
