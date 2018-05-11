@@ -84,67 +84,67 @@ void setup() {
   }
   /**/
   // TODO: implement more modes
-  int Mode = 0;
+  int Mode = 5;
   if (Mode == 0) { // 43 bps
     LoRa.setSignalBandwidth(20.8E3);
-  LoRa.setSpreadingFactor(11);           // ranges from 6-12,default 7 see API docs
-  LoRa.setCodingRate4(8);
-  LoRa.setPreambleLength(17);
+    LoRa.setSpreadingFactor(11);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(8);
+    LoRa.setPreambleLength(17);
   }
   else if (Mode == 1) { // 1476 bps
-  LoRa.setSignalBandwidth(20.8E3);
-  LoRa.setSpreadingFactor(6);           // ranges from 6-12,default 7 see API docs
-  LoRa.setCodingRate4(5);
-  LoRa.setPreambleLength(17);
+    LoRa.setSignalBandwidth(20.8E3);
+    LoRa.setSpreadingFactor(6);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(5);
+    LoRa.setPreambleLength(17);
   }
   else if (Mode == 2) { // 915 bps
-  LoRa.setSignalBandwidth(62.5E3);
-  LoRa.setSpreadingFactor(8);           // ranges from 6-12,default 7 see API docs
-  LoRa.setCodingRate4(8);
-  LoRa.setPreambleLength(17);
+    LoRa.setSignalBandwidth(62.5E3);
+    LoRa.setSpreadingFactor(8);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(8);
+    LoRa.setPreambleLength(17);
   }
   else if (Mode == 3) { // 8509 bps
-  LoRa.setSignalBandwidth(250.0E3);
-  LoRa.setSpreadingFactor(7);           // ranges from 6-12,default 7 see API docs
-  LoRa.setCodingRate4(5); // check this value
-  LoRa.setPreambleLength(17);
+    LoRa.setSignalBandwidth(250.0E3);
+    LoRa.setSpreadingFactor(7);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(5); // check this value
+    LoRa.setPreambleLength(17);
   }
   else if (Mode == 4) { // 17738 bps
-  LoRa.setSignalBandwidth(250.0E3);
-  LoRa.setSpreadingFactor(6);           // ranges from 6-12,default 7 see API docs
-  LoRa.setCodingRate4(5);
-  LoRa.setPreambleLength(17);
+    LoRa.setSignalBandwidth(250.0E3);
+    LoRa.setSpreadingFactor(6);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(5);
+    LoRa.setPreambleLength(17);
   }
   else if (Mode == 5) { // 104 bps
-  LoRa.setSignalBandwidth(41.7E3);
-  LoRa.setSpreadingFactor(11);           // ranges from 6-12,default 7 see API docs
-  LoRa.setCodingRate4(8);
-  LoRa.setPreambleLength(17);
+    LoRa.setSignalBandwidth(41.7E3);
+    LoRa.setSpreadingFactor(11);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(8);
+    LoRa.setPreambleLength(17);
   }
   else if (Mode == 6) { // 2959 bps
-  LoRa.setSignalBandwidth(41.7E3);
-  LoRa.setSpreadingFactor(6);           // ranges from 6-12,default 7 see API docs
-  LoRa.setCodingRate4(5);
-  LoRa.setPreambleLength(17);
+    LoRa.setSignalBandwidth(41.7E3);
+    LoRa.setSpreadingFactor(6);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(5);
+    LoRa.setPreambleLength(17);
   }
   else if (Mode == 7) { // 841 bps
-  LoRa.setSignalBandwidth(20.8E3);
-  LoRa.setSpreadingFactor(7);           // ranges from 6-12,default 7 see API docs
-  LoRa.setCodingRate4(5);
-  LoRa.setPreambleLength(17);
+    LoRa.setSignalBandwidth(20.8E3);
+    LoRa.setSpreadingFactor(7);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(5);
+    LoRa.setPreambleLength(17);
   }
   else if (Mode == 8) { // 4435 bps
-  LoRa.setSignalBandwidth(62.5E3);
-  LoRa.setSpreadingFactor(6);           // ranges from 6-12,default 7 see API docs
-  LoRa.setCodingRate4(5);
-  LoRa.setPreambleLength(17);
+    LoRa.setSignalBandwidth(62.5E3);
+    LoRa.setSpreadingFactor(6);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(5);
+    LoRa.setPreambleLength(17);
   }
   else if (Mode == 9) {
-  // not supported
-  LoRa.setSignalBandwidth(500.0E3);
-  LoRa.setSpreadingFactor(6);           // ranges from 6-12,default 7 see API docs
-  LoRa.setCodingRate4(5);
-  LoRa.setPreambleLength(17);
+    // not supported
+    LoRa.setSignalBandwidth(500.0E3);
+    LoRa.setSpreadingFactor(6);           // ranges from 6-12,default 7 see API docs
+    LoRa.setCodingRate4(5);
+    LoRa.setPreambleLength(17);
   }
   /**/
   Serial.println("LoRa init succeeded.");
